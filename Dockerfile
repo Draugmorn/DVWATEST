@@ -3,7 +3,7 @@ FROM  szagv1337/lamp:v1
 LABEL maintainer Mikhail E
 
 RUN apt-get update
-RUN apt-get -y install apache2 mysql-server php5-mysql php5 libapache2-mod-php5 php5-mcrypt vim  git apt-transport-https ca-certificate
+RUN apt-get -y install apache2 mysql-server php5-mysql php5 libapache2-mod-php5 php5-mcrypt vim  git apt-transport-https ca-certificate \
 RUN git clone https://github.com/szagvozdin123/docker-vulnerable-dvwa.git 
 
 RUN chown www-data:www-data -R /var/www/html && \
