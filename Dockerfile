@@ -3,7 +3,7 @@ FROM  szagv1337/lamp:v1
 LABEL maintainer Mikhail E
 
 RUN apt-get update
-RUN apt-get -y install php php-mysqli php-gd libapache2-mod-php git git apt-transport-https ca-certificates
+RUN apt-get -y install php php-mysqli php-gd libapache2-mod-php git apt-transport-https ca-certificates
 RUN apt-get -y install apache2 mysql-server
 RUN git clone https://github.com/szagvozdin123/docker-vulnerable-dvwa.git 
 
