@@ -5,4 +5,4 @@ jobs:
    steps:
      - checkout
      - run:
-         docker build -f https://github.com/Draugmorn/DVWATEST/java8 - < Dockerfile
+         docker build -f https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
