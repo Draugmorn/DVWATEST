@@ -13,6 +13,6 @@ RUN chown www-data:www-data -R /var/www/html && \
 
 EXPOSE 80
 
-COPY main.sh /
+
 ENTRYPOINT ["/main.sh"]
 
