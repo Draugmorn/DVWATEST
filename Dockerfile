@@ -9,7 +9,6 @@ RUN git clone https://github.com/szagvozdin123/docker-vulnerable-dvwa.git
 
 RUN chown www-data:www-data -R /var/www/html && \
     rm /var/www/html/index.html
-RUN docker run -dit -p 80:80 --name www $id
 
 EXPOSE 80
 
