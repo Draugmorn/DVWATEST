@@ -3,7 +3,7 @@ jobs:
  build:
    machine: true
    steps:
-     - checkout
+     - checkout:
      - run:
          docker build -f https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
      steps:
