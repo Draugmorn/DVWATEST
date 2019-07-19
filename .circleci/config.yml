@@ -3,10 +3,10 @@ jobs:
  build:
    machine: true
    steps:
-     - checkout:
-     - run:
+     - checkout
+      - run:
          docker build -f https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
-     steps:
+      steps:
       - run:
           name: The First Step
           command: Docker DVWA
