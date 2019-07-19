@@ -5,6 +5,7 @@ LABEL maintainer Mikhail E
 RUN apt-get update
 RUN apt-get install -y php7.0-fpm vim git apt-transport-https ca-certificates supervisor && \ 
     rm -rf /var/lib/apt/lists/*
+RUN git clone https://github.com/Draugmorn/DVWATEST 
 
 COPY php.ini /etc/php5/apache2/php.ini
 COPY dvwa /var/www/html
