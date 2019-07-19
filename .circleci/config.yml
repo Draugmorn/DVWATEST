@@ -4,9 +4,9 @@ jobs:
    machine: true
    steps:
      - checkout
-      - run:
+     - run:
          docker build -f https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
-      - run: |
+     - run: |
           name: The First Step
           command: docker build . -t dvwa:$BUILD_NUMBER --no-cache=true
          id=`docker images | grep -E &apos;^dvwa&apos; | awk -e &apos;{print $3}&apos;`
