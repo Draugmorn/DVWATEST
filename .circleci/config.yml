@@ -5,4 +5,4 @@ jobs:
    steps:
      - checkout
      - run:
-         docker import https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
+         docker build https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
