@@ -6,7 +6,10 @@ jobs:
      - checkout
      - run:
          docker build -f https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
-     - run:
+     steps:
+      - run:
+          name: The First Step
+          command: Docker DVWA
          docker build . -t dvwa:$BUILD_NUMBER --no-cache=true
          id=`docker images | grep -E &apos;^dvwa&apos; | awk -e &apos;{print $3}&apos;`
          docker run -dit -p 80:80 --name www $id
