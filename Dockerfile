@@ -3,7 +3,7 @@ FROM  szagv1337/lamp:v1
 LABEL maintainer Mikhail E
 
 RUN apt-get update
-sudo apt-get install vim  git apt-transport-https ca-certificates \
+RUN apt-get install vim  git apt-transport-https ca-certificates \
 curl software-properties-common php5-cli –y
 RUN git clone https://github.com/szagvozdin123/docker-vulnerable-dvwa.git 
 
