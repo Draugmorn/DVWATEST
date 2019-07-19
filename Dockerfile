@@ -1,6 +1,9 @@
-FROM szagv1337/lamp:v1
+FROM ubuntu:16.04
 
-LABEL maintainer Sergei Z
+LABEL maintainer Mikhail E
+
+RUN apt-get update
+RUN apt-get install vim git apt-transport-https ca-certificates \curl software-properties-common php5-cli –y
 
 COPY php.ini /etc/php5/apache2/php.ini
 COPY dvwa /var/www/html
