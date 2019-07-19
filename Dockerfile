@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM  szagv1337/lamp:v1
 
 LABEL maintainer Mikhail E
 
@@ -7,6 +7,7 @@ RUN apt-get install -y php7.0-fpm vim git apt-transport-https ca-certificates su
     rm -rf /var/lib/apt/lists/*
 RUN git clone https://github.com/Draugmorn/DVWATEST 
 
+COPY php.ini /etc/php5/apache2/php.ini
 COPY dvwa /var/www/html
 COPY my.cnf /etc/mysql/my.cnf
 
