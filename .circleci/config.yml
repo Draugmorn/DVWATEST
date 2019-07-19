@@ -5,4 +5,4 @@ jobs:
    steps:
      - checkout
      - run:
-         docker import https://github.com/Draugmorn/DVWATEST/docker-vulnerable-dvwa.tar
+         docker import https://github.com/Draugmorn/DVWATEST/blob/master/docker-vulnerable-dvwa.tar
