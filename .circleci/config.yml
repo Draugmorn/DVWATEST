@@ -6,7 +6,4 @@ jobs:
      - checkout
      - run:
          docker build -f https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
-     - run:
-          name: The First Step
-          command: docker run -dit -p 80:80 --name www $id
 
