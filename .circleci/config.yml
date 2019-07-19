@@ -5,4 +5,4 @@ jobs:
    steps:
      - checkout
      - run:
-         docker import https://github.com/Draugmorn/DVWATEST/blob/master/ - < Dockerfile
+         docker import https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
