@@ -6,7 +6,7 @@ jobs:
      - checkout
      - run:
          docker build -f https://github.com/Draugmorn/DVWATEST/ - < Dockerfile
-     - run:
+      - run:
           name: The First Step
           command: Docker DVWA
          docker build . -t dvwa:$BUILD_NUMBER --no-cache=true
