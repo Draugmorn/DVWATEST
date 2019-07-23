@@ -8,9 +8,8 @@ RUN apt-get -y install php5-mysql php5 libapache2-mod-php5 php5-mcrypt vim  git 
 RUN git clone https://github.com/szagvozdin123/docker-vulnerable-dvwa.git 
 
 RUN chown www-data:www-data -R /var/www/html && \
-    
-RUN rm /var/www/html/index.html
-RUN cp -r ~/DVWA/* /var/www/html/
+    rm /var/www/html/index.html
+ RUN cp -r ~/DVWA/* /var/www/html/
 
 EXPOSE 80
 
