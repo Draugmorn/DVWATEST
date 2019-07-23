@@ -9,7 +9,7 @@ RUN git clone https://github.com/szagvozdin123/docker-vulnerable-dvwa.git
 
 RUN chown www-data:www-data -R /var/www/html && \
     rm /var/www/html/index.html
- RUN cp -r ~/DVWA/* /var/www/html/
+ RUN cp -r ~/docker-vulnerable-dvwa/* /var/www/html/
 
 EXPOSE 80
 
