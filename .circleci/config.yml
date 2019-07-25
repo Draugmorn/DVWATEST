@@ -5,5 +5,5 @@ jobs:
    steps:
      - checkout
      - run:
-         docker build -f https://github.com/Draugmorn/DVWATEST/blob/master/.circleci/Dockerfile - < Dockerfile
+         docker build -f https://github.com/Draugmorn/DVWATEST/Dockerfile - < Dockerfile
 
